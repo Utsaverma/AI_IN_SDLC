@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": "./scripts/pricing-guard.sh",
+        "powershell": "./scripts/pricing-guard.ps1",
+        "cwd": ".github/hooks",
+        "timeoutSec": 15
+      }
+    ]
+  }
+}
